@@ -1,3 +1,4 @@
+package taller6resuelto;
 import java.util.Scanner;
 
 public class Ejercicio7 {
@@ -22,5 +23,7 @@ public class Ejercicio7 {
         promedio = (double) total / pruebas.length;
         
         System.out.println("El promedio de las pruebas es: " + promedio);
+        sc.close();
     }
+    
 }

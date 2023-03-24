@@ -1,3 +1,4 @@
+package taller6resuelto;
 import java.util.Scanner;
 
 public class Ejercicio8 {
