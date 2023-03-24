@@ -2,13 +2,14 @@ package Ejercicio_9package;
 import java.util.Random;
 
 public class Deck {
-    private Card[] cardArray;
-    private int topCardIndex;
+    public Card[] cardArray;
+    public int topCardIndex;
 
     public Deck() {
         int suits = 4;
         int cardType = 13;
         int cardCount = 0;
+        
         cardArray = new Card[suits * cardType];
         for(int i = 1; i <= suits; i++) {
             for(int j = 1; j <= cardType; j++) {
@@ -30,7 +31,7 @@ public class Deck {
         topCardIndex = 0;
     }
 
-    public Card deal() {
+    public Card deal() {	
         if (topCardIndex >= cardArray.length) {
             System.out.println("No more cards in the deck!");
             return null;
